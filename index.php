@@ -28,11 +28,12 @@ $books = [
 
 <ul>
 
-<?php foreach ($books as $book) {
-  echo "<li>$book</li>";
-}
-
+<?php foreach ($books as $book) :
 ?>
+
+<li>Hello There</li>
+
+<?php endforeach; ?>
 </ul>
   </body>
 </html>
