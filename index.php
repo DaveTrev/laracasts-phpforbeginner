@@ -15,18 +15,21 @@
     </style>
   </head>
   <body>
-    <?php 
-    $name = "Dark Matter";
-    $read = false;
+<h1>Recommended Books</h1>
 
-    if ($read){
-      $message = "You have read $name";
-    } else {
-      $message = "You have NOT read $name";
-    }
-    ?>
-    <h1>
-       <?= $message ?>
-    </h1>
+<?php 
+$books = [
+  "Do Androids Dream of Electric Sheep",
+  "The Langoliers",
+  "Hail Mary"
+];
+
+?>
+
+<ul>
+<li>Do Androids Dream of Electric Sheep</li>
+<li>The Langoliers</li>
+<li>Hail Mary</li>
+</ul>
   </body>
 </html>
