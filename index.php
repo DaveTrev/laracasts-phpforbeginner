@@ -31,7 +31,7 @@ $books = [
 <?php foreach ($books as $book) :
 ?>
 
-<li>Hello There</li>
+<li><?= $book ?></li>
 
 <?php endforeach; ?>
 </ul>
