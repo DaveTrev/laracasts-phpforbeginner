@@ -27,9 +27,12 @@ $books = [
 ?>
 
 <ul>
-<li>Do Androids Dream of Electric Sheep</li>
-<li>The Langoliers</li>
-<li>Hail Mary</li>
+
+<?php foreach ($books as $book) {
+  echo "<li>" . $book . "</li>";
+}
+
+?>
 </ul>
   </body>
 </html>
