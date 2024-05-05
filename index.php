@@ -20,12 +20,14 @@
 <?php 
 $books = [[
  'name' => 'Do Androids Dream of Electric Sheep',
+ 'yearPublished' => '1984',
  'author' => 'Philip K Dick',
  'purchaseUrl' => 'www.example.com'
 ],
 
 [
   'name' => 'Project hail mary',
+  'yearPublished' => '2021',
   'author' => 'Andy Weir',
   'purchaseUrl' => 'www.example.com'
 ],
@@ -37,7 +39,7 @@ $books = [[
 
     <li> 
       <a href="<?= $book['purchaseUrl']  ?>">
-         <?= $book['name']; ?>
+         <?= $book['name']?> (<?= $book['yearPublished'] ?>)
       </a>
  
   </li>
