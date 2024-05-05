@@ -18,16 +18,24 @@
 <h1>Recommended Books</h1>
 
 <?php 
-$books = [
-  "Do Androids Dream of Electric Sheep",
-  "The Langoliers",
-  "Hail Mary"
-];
+$books = [[
+ 'name' => 'Do Androids Dream of Electric Sheep',
+ 'author' => 'Philip K Dick',
+ 'purchaseUrl' => 'www.example.com'
+],
 
+[
+  'name' => 'Project hail mary',
+  'author' => 'Andy Weir',
+  'purchaseUrl' => 'www.example.com'
+],
+];
 ?>
 
-<p>
-  <?= $books[1] ?>
-</p>
+<ul>
+  <?php foreach ($books as $book) : ?>
+    <li> <?= $book['name']; ?></li>
+    <?php endforeach; ?> 
+</ul>
   </body>
 </html>
