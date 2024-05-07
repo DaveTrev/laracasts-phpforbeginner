@@ -51,10 +51,12 @@ function filterByAuthor($books, $author)
 
     return $filteredBooks;
 }
+
+$filteredBooks = filterByAuthor($books, 'Philip K. Dick');
 ?>
 
 <ul>
-<?php foreach (filterByAuthor($books, 'Philip K. Dick') as $book) : ?>
+<?php foreach ($filteredBooks as $book) : ?>
     <li>
         <a href="<?= $book['purchaseUrl'] ?>">
             <?= $book['name']; ?> (<?= $book['releaseYear'] ?>) - By <?= $book['author'] ?>
