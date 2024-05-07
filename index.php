@@ -41,7 +41,7 @@ $books = [
 
 
 $filteredBooks = array_filter($books, function ($book) {
-  return $book['releaseYear'] > 2000;
+  return $book['releaseYear'] >= 1950 && $book['releaseYear'] <= 2000;
 });
 ?>
 
