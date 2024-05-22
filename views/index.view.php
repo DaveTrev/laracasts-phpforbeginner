@@ -11,7 +11,5 @@
       <p>Hello welcome to the home page!</p>
     </div>
   </main>
-</div>
 
-</body>
-</html>
+  <?php require('partials/footer.php')?>

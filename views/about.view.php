@@ -12,7 +12,4 @@
       <p>You are not on the about page!</p>
     </div>
   </main>
-</div>
-
-</body>
-</html>
+  <?php require('partials/footer.php')?>
